@@ -66,7 +66,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             ListTile(
               title: Text('Help & Support'),
               onTap: () {
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => HelpSupportScreen()));// Perform actions when item 2 is tapped
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => HelpSupportScreen()));
               },
             ),
              ListTile(
@@ -75,7 +75,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                Navigator.push(context, MaterialPageRoute(builder: (context) => MyLogin()));
                   },
                 ),
-            // Add more list items as needed
           ],
         ),
       ),

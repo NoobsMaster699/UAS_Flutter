@@ -77,7 +77,6 @@ class AboutScreen extends StatelessWidget {
                 ],
               ),
             ),
-            // Add more sections if needed
           ],
         ),
       ),

@@ -8,7 +8,6 @@ class MyLogin extends StatefulWidget {
 }
 
 class _MyLoginState extends State<MyLogin> {
-  // Password Field obscureText Handler
   bool _isHidden = true;
   void _toggleVisibility() {
     setState(() {
@@ -16,11 +15,9 @@ class _MyLoginState extends State<MyLogin> {
     });
   }
 
-  // Email and Password Controllers
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
 
-  // Function to check if both email and password are not empty
   bool _isLoginEnabled() {
     return _emailController.text.isNotEmpty && _passwordController.text.isNotEmpty;
   }
@@ -115,10 +112,7 @@ class _MyLoginState extends State<MyLogin> {
                               shape: StadiumBorder(),
                             ),
                             onPressed: _isLoginEnabled()
-                                ? () {
-                                    // Navigasi ke tampilan dashboard dan hapus halaman login dari stack
-                                    Navigator.pushReplacementNamed(context, 'dashboard');
-                                  }
+                                ? () {Navigator.pushReplacementNamed(context, 'dashboard');}
                                 : null,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
